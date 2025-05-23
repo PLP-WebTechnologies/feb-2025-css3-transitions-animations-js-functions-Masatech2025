@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation in Css</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="movingName"> Wuese Mathias Saa-Aondo</h1> <br> <br>
+
+    <img id="On" src="./images/on.jpeg" alt="Switch On" style="display: none;">
+    <img id="Off" src="./images/off.jpeg" alt="Switch Off" style="display: block;"><br>
+    <button id="toggleButton">Toggle Bulb</button> <br><br>
+    <select id="colorSelect" onchange="saveColorPreference()">
+        <option value="white">White</option>
+        <option value="lightblue">Light Blue</option>
+        <option value="light-green">Light Green</option>
+    </select>
+    <br><br>
+    <button id="animateBtn" onclic="animateButton()"></button>
+    <script src="script.js"></script>
+</body>
+
+</html>

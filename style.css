@@ -1,0 +1,50 @@
+#movingName {
+    font-family: Tahoma, sans-serif;
+    font-size: 40px;
+    color: blue;
+    position: relative;
+    animation: movingLeft 5s linear infinite;
+}
+
+@keyframes movingLeft {
+    from {
+        left: 100%;
+    }
+    to {
+    left: -100%;
+    }
+}
+
+@keyframes {
+    0% { left: 0;}
+    100% { left: 100% }
+}
+#colorSelect {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  color: #333;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#colorSelect:hover {
+  border-color: #45a049;
+  background-color: #eef;
+}
+
+#colorSelect:focus {
+  box-shadow: 0 0 5px #45a049;
+}
+
+@keyframes  bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
+}
+.bouncing {
+    animation: bounce 0.5s;
+}
